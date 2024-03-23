@@ -1,0 +1,66 @@
+/* تعيين الخلفية وتحديد خصائص الجسم */
+body {
+    background-image: url('d2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* تحديد تخطيط الشبكة وخصائص الحاوية */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(3, 120px); /* زيادة ارتفاع الصفوف */
+    gap: 10px; /* تقليل المسافة بين المربعات */
+}
+
+/* تنسيق خصائص المربع */
+.box {
+    background-color: #2438A0;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* تحديد محاذاة النص إلى الأسفل */
+    font-size: 13px; /* تصغير حجم النص */
+    font-family: 'Cairo', sans-serif; /* تطبيق خط القاهرة */
+    font-weight: normal;
+    padding: 3px;
+    line-height: 21px; /* تعديل ارتفاع الخط داخل المربع */
+    border-radius: 15%; /* جعل حواف المربعات دائرية */
+    margin-top: 60px; /* تعديل المسافة بين المربع والحافة السفلية */
+    margin-bottom: -50px; /* تقليل المسافة بين المربع والمربع السفلي */
+    background-size: 60%; /* تصغير حجم الصورة */
+    background-position: center; /* تحديد موقع الصورة في المربع */
+    background-repeat: no-repeat; /* منع تكرار الصور */
+}
+
+/* تعيين الصور لكل مربع باستخدام nth-child */
+.box:nth-child(1) {
+    background-image: url('vegetables.png');
+}
+
+.box:nth-child(2) {
+    background-image: url('Dairy.png');
+}
+
+.box:nth-child(3) {
+    background-image: url('checkin.png');
+}
+
+.box:nth-child(4) {
+    background-image: url('wheat.png');
+}
+
+.box:nth-child(5) {
+    background-image: url('desert.png');
+}
+
+.box:nth-child(6) {
+    background-image: url('Restaurants.png');
+}

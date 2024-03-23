@@ -1,0 +1,66 @@
+body {
+    background-image: url('b2.png'); /* تعيين الصورة الخلفية */
+    background-size: contain; /* تحديد حجم الصورة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    background-position: center center; /* توسيط الصورة */
+    background-attachment: fixed; /* تثبيت الصورة خلفية */
+    background-color: black; /* لون الخلفية */
+    font-family: 'Cairo', Arial, sans-serif; /* تحديد الخط */
+    margin-bottom: 90px; /* المسافة بين النص وأسفل الصفحة */
+    padding: 0; /* إزالة الهامش الداخلي */
+    color: #2438A0; /* لون النص */
+    font-size: 0.9em; /* حجم الخط */
+}
+
+.container {
+    text-align: center; /* توسيط النص */
+    position: absolute; /* تحديد موقع المركز بالنسبة للصفحة */
+    top: 53%; /* النسبة المئوية للارتفاع بالنسبة للصفحة */
+    left: 50%; /* النسبة المئوية للعرض بالنسبة للصفحة */
+    transform: translate(-50%, -50%); /* تحديد الموقع بالتحويل */
+    padding: 20px; /* هامش داخلي للعناصر */
+    border-radius: 20px; /* شكل الزوايا */
+}
+
+h1 {
+    font-size: 1.8em; /* حجم الخط */
+    position: relative; /* تحديد موقع العنوان */
+    z-index: 2; /* تحديد ترتيب الطبقات */
+    margin-bottom: 20px; /* المسافة بين العنوان والنصوص السابقة */
+}
+
+p {
+    font-size: 1em; /* حجم الخط */
+    margin-bottom: 20px; /* المسافة بين الفقرات */
+}
+
+.start-button {
+    display: inline-block; /* عرض الزر كمربع مستطيل */
+    padding: 10px 20px; /* هامش داخلي للزر */
+    background-color: #2438A0; /* لون خلفية الزر */
+    border: 2px solid #2438A0; /* لون حاشية الزر */
+    border-radius: 20px; /* شكل الزوايا */
+    text-decoration: none; /* إزالة التزيين النصي للرابط */
+    color: #ffffff; /* لون النص */
+    margin-top: 100px; /* المسافة بين الزر والنص */
+}
+
+.stretched-word {
+    font-weight: bold; /* سمك الخط */
+    display: inline-block; /* عرض النص كمربع مستطيل */
+    font-size: 1.8em; /* حجم الخط */
+    letter-spacing: 3px; /* تباعد الحروف */
+    margin-bottom: 120px; /* المسافة بين النص والعناصر التالية */
+}
+
+.long-text {
+    word-wrap: break-word; /* تلقيم النص إذا تجاوز العرض */
+}
+
+.normal-font {
+    font-weight: normal; /* سمك الخط */
+}
+
+.login {
+    margin-top: 50px; /* المسافة بين الرابط والنص */
+}

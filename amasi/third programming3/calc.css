@@ -1,0 +1,54 @@
+body {
+    background-image: url('a1.png'); /* تعيين صورة الخلفية */
+    background-size: contain; /* تحديد حجم الصورة لتملأ العرض أو الارتفاع */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    background-position: center center; /* تحديد موضع الصورة في المنتصف */
+    font-family: Arial, sans-serif; /* تعيين الخط المستخدم */
+    background-color: black; /* تعيين لون الخلفية */
+    margin: 0; /* إزالة هوامش الصفحة */
+    padding: 0; /* إزالة تباعد الصفحة */
+}
+
+.container {
+    text-align: center; /* توسيط النص */
+    margin-top: 100px; /* تحديد المسافة بين العنوان وأعلى الصفحة */
+}
+
+h1 {
+    font-size: 2em; /* تحديد حجم العنوان */
+    color: rgb(255, 255, 255); /* تعيين لون النص */
+    margin-top: 1px; /* تحديد المسافة بين العنوان وأعلى الصفحة */
+}
+
+input[type="number"] {
+    width: 200px; /* تحديد عرض حقل الإدخال */
+    padding: 10px; /* تحديد هامش الحقل */
+    border: none; /* إزالة حدود الحقل */
+    border-bottom: 2px solid white; /* إضافة خط أسفل الحقل */
+    background: transparent; /* تعيين خلفية شفافة */
+    color: white; /* تعيين لون النص */
+    margin-top: 20px; /* تحديد المسافة بين حقول الإدخال */
+    text-align: right; /* تحديد محاذاة النص إلى اليمين */
+}
+
+input[type="submit"] {
+    background-color: transparent; /* تعيين خلفية شفافة */
+    border: 2px solid white; /* تحديد حدود الزر */
+    color: white; /* تعيين لون النص */
+    padding: 10px 20px; /* تحديد هامش الزر */
+    border-radius: 20px; /* تحديد شكل الزر */
+    cursor: pointer; /* تحديد شكل المؤشر عند التحويم */
+    margin-top: px; /* تحديد المسافة بين الزر وحقل الإدخال */
+}
+
+.unit-number {
+    width: 200px; /* تحديد عرض العنصر */
+    height: 200px; /* تحديد ارتفاع العنصر */
+    border-radius: 50%; /* تحديد زوايا العنصر لتكون دائرية */
+    background-color: rgba(43, 6, 248, 0); /* تعيين لون خلفية العنصر مع شفافية */
+    color: #ffffff; /* تعيين لون النص */
+    line-height: 200px; /* تحديد ارتفاع النص ليكون في المنتصف */
+    font-size: 1.5em; /* تحديد حجم النص */
+    text-align: center; /* تحديد محاذاة النص إلى الوسط */
+    margin: 90px auto; /* تحديد هامش العنصر من الأعلى والأسفل مع توسيطه أفقيا */
+}

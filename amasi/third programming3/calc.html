@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!--اربط ملفات  ط CSS-->
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبا أروى</h1>
+        <!-- نموذج لإدخال بيانات معدل السكر ونسبة الكارب -->
+        <form id="calcForm">
+            <input type="number" id="sugarLevel" placeholder="أدخل معدل السكر">
+            <br>
+            <br>
+            <input type="number" id="carbRatio" placeholder="نسبة الكارب">
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="إرسال">
+        </form>
+        <!-- عرض نتيجة الحساب بوحدات الإنسولين -->
+        <div class="unit-number" id="unitResult">0</div>
+    </div>
+
+    <!-- اربط ملف ال JavaScript -->
+    <script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('e1.png'); /* تعيين الصورة الخلفية */
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative; /* تحديد العنصر الأساسي للعناصر الفرعية */
+    width: 400px; /* طول الخلفية */
+    height: 300px; /* ارتفاع الخلفية */
+    border-radius: 10px; /* تدوير حواف الخلفية */
+    padding: 20px; /* هامش داخلي للعناصر الفرعية */
+    display: flex; /* استخدام flexbox */
+    flex-direction: column; /* ترتيب المستطيلات عموديا */
+    justify-content: center; /* توسيط المستطيلات عموديا */
+    align-items: center; /* توسيط المستطيلات أفقيا */
+}
+
+.rectangle {
+    width: 80%; /* طول المستطيل */
+    height: calc(100% / 6); /* ارتفاع المستطيل مقسوما على عدد المستطيلات */
+    background-color:#2438A0; /* لون المستطيل */
+    position: relative; /* تحديد العنصر كموضع نسبي */
+    margin-bottom: 10px; /* تعيين المسافة بين المستطيلات */
+    display: flex; /* استخدام flexbox */
+    justify-content: center; /* توسيط النص أفقيا */
+    align-items: center; /* توسيط النص عموديا */
+    color: white; /* لون النص */
+    font-size: 20px; /* حجم النص */
+}
+
+.rectangle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% + 5px); /* زيادة عرض الخط لتغطية الحواف */
+    height: 5px; /* سماكة الخط */
+    background-color: rgb(255, 255, 255); /* لون الحافة */
+    z-index: -1; /* وضعه أسفل المستطيل */
+}
